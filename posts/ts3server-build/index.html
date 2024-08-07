@@ -107,7 +107,7 @@
     "keywords": ["teamspeak3","技术教程"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1887"
+    "wordCount": "1794"
   }]
   </script>
 
@@ -677,7 +677,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-06-06 10:15:48 &#43;0000 UTC">2024 June 6</time><span class="px-2 text-primary-500">&middot;</span><span>1887 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2024-06-06 10:15:48 &#43;0000 UTC">2024 June 6</time><span class="px-2 text-primary-500">&middot;</span><span>1794 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.63c8a202661f4a2063fdc2706685d668e8ea3da613da2224e9da527e5876e4f53dcac39ab60732626fb4151feae5d430d0cf44731e5d3c726522fcc1519c1547.js" integrity="sha512-Y8iiAmYfSiBj/cJwZoXWaOjqPaYT2iIk6dpSflh25PU9ysOatgcyYm&#43;0FR/q5dQw0M9Ecx5dPHJlIvzBUZwVRw=="></script>
@@ -1054,10 +1054,38 @@
     </span>        
     
 </h2>
-<p>:::info{title=&ldquo;适用 Linux&rdquo;}
-本教程主要是搭建 Linux 的 ts 服务器，如需 Windows 版本可以参照 bilibili up主
-大河李斯特视频工作室 的视频<a href="https://www.bilibili.com/video/BV1wt421u7wr/" target="_blank">《【看番教程35】无延迟、超稳定、功能强劲，搭建属于你自己的TeamSpeak语音服务器保姆级教程》</a>，但对于一个需要长期运行的服务，我建议使用服务器 Linux 进行搭建
-:::</p>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    ><strong>适用 Linux</strong></br> 本教程主要是搭建 Linux 的 ts 服务器，如需 Windows 版本可以参照 bilibili up主
+大河李斯特视频工作室 的视频<a href="https://www.bilibili.com/video/BV1wt421u7wr/" target="_blank">《【看番教程35】无延迟、超稳定、功能强劲，搭建属于你自己的TeamSpeak语音服务器保姆级教程》</a>，但对于一个需要长期运行的服务，我建议使用服务器 Linux 进行搭建</span>
+</div>
+
 <p>teamspeak3 的官网是 <a href="https://teamspeak.com/zh-CN/" target="_blank">https://teamspeak.com/zh-CN/</a> ，你可以直接点击进去，找到顶上的“下载”按钮，选择“server”选项卡。</p>
 <p>
   <figure>
@@ -1093,9 +1121,42 @@
 <p>同意许可：<code>touch .ts3server_license_accepted</code></p>
 <p>启动服务器：<code>./ts3server_startscript.sh start</code></p>
 <p>启动后会返回你一个 token，复制下来</p>
-<p>:::warning{title=&ldquo;注意&rdquo;}
-初次启动的输出十分重要，请务必保管好，不要泄露。如果可以还请将 ts 这一次运行输出的全部内容存放在你本地安全的位置
-:::</p>
+
+  
+  
+  
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md"
+    style="background-color: #e63946"
+  >
+
+  <span
+    
+      class="ltr:pr-3 rtl:pl-3 flex items-center"
+      style="color: #1d3557"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      style="color: #f1faee"
+    >初次启动的输出十分重要，请务必保管好，不要泄露。如果可以还请将 ts 这一次运行输出的全部内容存放在你本地安全的位置</span>
+</div>
+
 <p>
   <figure>
     <img class="my-0 rounded-md" loading="lazy" src="https://file.hetong-re4per.com/.picture/blog/24-06-05/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-06-06%20004321.png" alt="token" />
@@ -1203,9 +1264,37 @@
     </span>        
     
 </h2>
-<p>:::info{title=&ldquo;需要root&rdquo;}
-本部分需要使用 root 用户或者 <code>sudo</code>
-:::</p>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+<path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/></svg>
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    >本部分需要使用 root 用户或者 <code>sudo</code></span>
+</div>
+
 <p>创建服务文件 <code>/lib/systemd/system/teamspeak.service</code></p>
 <p>添加如下内容：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-service" data-lang="service"><span class="line"><span class="cl"><span class="k">[Unit]</span>
