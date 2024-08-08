@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="false"><head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="zh-cn" />
@@ -15,7 +15,7 @@
   <meta name="keywords" content="Minecraft, 技术教程, " />
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/mcserver-build/" />
+  <link rel="canonical" href="https://hetong-re4per.com/posts/mcserver-build/" />
   
   
   
@@ -63,7 +63,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/posts/mcserver-build/">
+  <meta property="og:url" content="https://hetong-re4per.com/posts/mcserver-build/">
   <meta property="og:site_name" content="瞳のBlog">
   <meta property="og:title" content="Java MC服务器搭建">
   <meta property="og:description" content="HeTongRe4per&#39;s website">
@@ -74,11 +74,11 @@
     <meta property="article:modified_time" content="2024-07-10T09:11:29+00:00">
     <meta property="article:tag" content="Minecraft">
     <meta property="article:tag" content="技术教程">
-    <meta property="og:image" content="http://localhost:1313/posts/mcserver-build/feature-95449182_p0.jpg">
+    <meta property="og:image" content="https://hetong-re4per.com/posts/mcserver-build/feature-95449182_p0.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/posts/mcserver-build/feature-95449182_p0.jpg">
+  <meta name="twitter:image" content="https://hetong-re4per.com/posts/mcserver-build/feature-95449182_p0.jpg">
   <meta name="twitter:title" content="Java MC服务器搭建">
   <meta name="twitter:description" content="HeTongRe4per&#39;s website">
 
@@ -93,7 +93,7 @@
     
     
     "inLanguage": "zh-cn",
-    "url" : "http:\/\/localhost:1313\/posts\/mcserver-build\/",
+    "url" : "https:\/\/hetong-re4per.com\/posts\/mcserver-build\/",
     "author" : {
       "@type": "Person",
       "name": "褐瞳さん"
@@ -1079,41 +1079,41 @@ MC 的服务器主要为纯净服，Mod 服和插件服，因为插件服我并�
 <p>首先将你的服务器核心放进你的服务器文件夹，比如我的的核心是 1.12.2 的版本核心，放在了 <code>/home/HeTong/Minecraft/1.12.2</code>文件夹内。</p>
 <p>接下来安装 Java，我第一次开服就在这里卡了很久，首先对应看你下载的 Java 版本是否正确，1.17 及以上的版本都需要 Java16 或者以上的版本，其他的用 Java8，如果你是 1.16.5 及以下的版本启动还有问题试试退到 Java8 更老的版本，比如我使用了 Java8 的 331 版本启动 1.12.2 却报错，换成 Java8 的 251 就好了，请对应版本下载 Jdk，比如我的的服务器就需要的是 <code>jdk-8u251-linux-x64.tar.gz</code>请对照自己的服务器版本下载对应的 Jdk，Java 的安装可以参照<a href="https://blog.csdn.net/manongxianfeng/article/details/112641235" target="_blank">这篇文章</a>。</p>
 <p>安装好了正确的 Java 版本后你就可以开始启动你的 MC 服务器啦，纯净服的启动十分的简单，直接输入</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -Xms**m -Xmx**m -jar &lt;你的核心名字&gt; nogui
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -Xms**m -Xmx**m -jar &lt;你的核心名字&gt; nogui
 </span></span></code></pre></div><p>就会开始启动了，在这其中，<code>-Xms**m</code>是你的最小分配给 MC 的运行内存，<code>-Xmx**m</code>是你分配给MC的最大运行内存，比如我的的是</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -Xms1G -Xmx1G -jar server-1.12.2.jar nogui
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -Xms1G -Xmx1G -jar server-1.12.2.jar nogui
 </span></span></code></pre></div><p>第一次启动肯定是不会直接启动的，需要你确定协议（<a href="https://www.minecraft.net/eula" target="_blank">EULA</a>），你可以打开你的 Xftp，找到你的服务器核心的位置，里面有一个刚生成的&quot;eula.txt&quot;文件，右键使用记事本编辑，将 <code>false</code>改为 <code>true</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).
-</span></span><span class="line"><span class="cl">#Fri Jan 12 18:56:37 CST 2024
-</span></span><span class="line"><span class="cl">eula=false
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).
+</span></span><span style="display:flex;"><span>#Fri Jan 12 18:56:37 CST 2024
+</span></span><span style="display:flex;"><span>eula=false
 </span></span></code></pre></div><p>然后除了eula还有一个文件需要修改，就是 <a href="https://minecraft.fandom.com/zh/wiki/Server.properties" target="_blank">server.properties</a>，里面的参数在这篇文章有详解，一般我们需要改的有&quot;online-mode&quot;这一项，意思是是否启用在线模式，如果是 true，将只有正版玩家可以进入游戏。
 现在你已经基本设定好了你的服务器属性了，再次输入</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -Xms**m -Xmx**m -jar server-*.*.*.jar nogui
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -Xms**m -Xmx**m -jar server-*.*.*.jar nogui
 </span></span></code></pre></div><p>你就会发现自己的服务器顺利启动了，ok啦！然后在控制台键入 <code>op &lt;你的ID&gt;</code>来赋予管理员权限给你自己</p>
 <p>接下来你就可以邀请好友进入你的服务器了，如果你打算开一个小服用来开黑一起玩建议开启白名单，在控制台键入 <code>whitelist on</code>便开启了白名单</p>
 <p>然后用 <code>whitelist add &lt;你的好友的ID&gt;</code>来添加白名单</p>
 <p>那想停止服务器怎么办呢？直接在控制台键入 stop 就行了，当然你也可以在游戏内以 op 身份使用指令 /stop 来停止服务器。</p>
 <p>当然我们不想每次启动服务器都输入那么长的指令，那我们可以写个简单的 shell 脚本，文件名为 <code>run.sh</code>，大概的内容是</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /your/minecraft/path/
-</span></span><span class="line"><span class="cl">screen -dmS &lt;你想要的 screen 名字&gt; java -Xms*G -Xmx*G -XX:+AggressiveOpts -XX:+UseCompressedOops -jar &lt;mc核心文件名&gt; nogui
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;minecraft &lt;MC 的版本&gt; server started successfully&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>cd /your/minecraft/path/
+</span></span><span style="display:flex;"><span>screen -dmS &lt;你想要的 screen 名字&gt; java -Xms*G -Xmx*G -XX:+AggressiveOpts -XX:+UseCompressedOops -jar &lt;mc核心文件名&gt; nogui
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;minecraft &lt;MC 的版本&gt; server started successfully&#34;</span>
 </span></span></code></pre></div><p>如果 screen 报错可以先 <code>sudo apt-get install screen -y</code>来安装 screen。</p>
 <p>其中的 <code>screen -dmS</code>是后台启动一个窗口名字就是你设定的名字，<code>-XX:+AggressiveOpts -XX:+UseCompressedOops</code>是用来优化启动的指令，<code>/your/minecraft/path/</code>是你放置服务器核心文件夹的绝对路径，比如我的的脚本就是</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /home/HeTong/Minecraft/1.12.2/
-</span></span><span class="line"><span class="cl">screen -dmS mc java -Xms2G -Xmx2G -XX:+AggressiveOpts -XX:+UseCompressedOops -jar minecraft_server.1.12.2.jar nogui
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;minecraft 1.12.2 server started successfully&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>cd /home/HeTong/Minecraft/1.12.2/
+</span></span><span style="display:flex;"><span>screen -dmS mc java -Xms2G -Xmx2G -XX:+AggressiveOpts -XX:+UseCompressedOops -jar minecraft_server.1.12.2.jar nogui
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;minecraft 1.12.2 server started successfully&#34;</span>
 </span></span></code></pre></div><p>现在你每次启动都可以使用 <code>./run.sh</code>来快捷启动 MC 服务器</p>
 <p>但是要记得你的 <code>run.sh</code>的文件位置才行的，比如我将 MC 放在了 <code>/home/HeTong/Minecraft/1.12.2</code>这个文件夹内，并且脚本名称为 <code>1.12.2-run.sh</code>，那么我想在任何地方运行服务器核心的话运行指令就为 <code>bash /home/HeTong/Minecraft/1.12.2/1.12.2-run.sh</code></p>
 <p>那么如何用 shell 脚本停止 mc 服务器的运行呢？答案就是：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl">screen -dr &lt;你的screen名字&gt; -X stuff <span class="s2">&#34;say 服务器将在10S后关闭！\n&#34;</span>
-</span></span><span class="line"><span class="cl">sleep <span class="m">10</span>
-</span></span><span class="line"><span class="cl">screen -dr &lt;你的screen名字&gt; -X stuff <span class="s2">&#34;stop\n&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>screen -dr &lt;你的screen名字&gt; -X stuff <span style="color:#e6db74">&#34;say 服务器将在10S后关闭！\n&#34;</span>
+</span></span><span style="display:flex;"><span>sleep <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>screen -dr &lt;你的screen名字&gt; -X stuff <span style="color:#e6db74">&#34;stop\n&#34;</span>
 </span></span></code></pre></div><p>ok以上就是纯净服的开服教程了，很简单吧，接下来说说 forge 版开服教程，其实和纯净版差不多，只是细节更多而已。</p>
 
 
@@ -1138,9 +1138,9 @@ MC 的服务器主要为纯净服，Mod 服和插件服，因为插件服我并�
 <p>首先将你的 Forge 核心的下载器和对应版本的纯净服核心放进你觉得合适的位置，比如我使用了 1.16.5 的 Forge 核心，放在了 <code>/home/HeTong/Minecraft/1.16.5-forge</code>下</p>
 <p>然后安装正确的 Java 版本（不知道为什么，似乎 Forge 对于 Java 版本要求比纯净版要求高许多）</p>
 <p>现在假设你没有 Java 版本的问题，你就可以到你的核心所在文件夹下运行这一段指令</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -jar forge-***-installer.jar --installServer
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -jar forge-***-installer.jar --installServer
 </span></span></code></pre></div><p>其中 <code>forge-***-installer.jar</code>是你的 Forge 核心下载器的文件名称比如我的的是</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -jar forge-1.16.5-36.2.0-installer.jar --installServer
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -jar forge-1.16.5-36.2.0-installer.jar --installServer
 </span></span></code></pre></div><p>如果出现了</p>
 <pre tabindex="0"><code class="language-log" data-lang="log">A problem occurred running the Server launcher.java.lang.reflect.InvocationTargetException
         at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:110)
@@ -1155,28 +1155,28 @@ Caused by: java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$
 </code></pre><p>这种类似的错误大概率是 Java 版本不对，可以多试几个 Java 版本。
 现在假设你已经安装了正确的 Java 版本，这时候它第一步会下载 mc 的纯净服的服务器核心和 Forge 的核心，因为 mc 官方的下载服务器在国外，所以你的服务器如果没有下载纯净服核心大概会卡在这一步，如果你按照我说的提前准备好了纯净服的核心就会跳过纯净服核心下载这一步，然后等待下载 libraries 库，有的时候也会因为网络原因卡在某一个下载上，你可以试试在自己电脑上先运行 Forge 安装 Server，将下载的 libraries 库打包到服务器上。
 现在你已经装好了 Forge 核心，在你的 <code>forge-***-installer.jar同级文件夹下会有一个名为forge-***.jar</code>的核心，运行</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -jar forge-***.jar nogui
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -jar forge-***.jar nogui
 </span></span></code></pre></div><p>例如我的是</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -jar forge-1.16.5-36.2.0 nogui
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -jar forge-1.16.5-36.2.0 nogui
 </span></span></code></pre></div><p>运行后依旧是 <a href="https://www.minecraft.net/eula" target="_blank">eula</a> 的同意，和 <a href="https://www.bilibili.com/read/cv7149916/" target="_blank">server.properties</a> 的修改，请参照纯净版对应部分。</p>
 <p>最后，依旧是写一个方便运行的脚本 <code>run.sh</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /your/forge/minecraft/path/
-</span></span><span class="line"><span class="cl">screen -dmS &lt;你的 forge screen 名字&gt; java -Xms*G -Xmx*G -XX:+AggressiveOpts -XX:+UseCompressedOops -jar &lt;forge 核心文件名&gt; nogui
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;minecraft &lt;MC 的版本&gt; server started successfully&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>cd /your/forge/minecraft/path/
+</span></span><span style="display:flex;"><span>screen -dmS &lt;你的 forge screen 名字&gt; java -Xms*G -Xmx*G -XX:+AggressiveOpts -XX:+UseCompressedOops -jar &lt;forge 核心文件名&gt; nogui
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;minecraft &lt;MC 的版本&gt; server started successfully&#34;</span>
 </span></span></code></pre></div><p>比如我的是</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /home/HeTong/.minecraft/1.16.5-forge/
-</span></span><span class="line"><span class="cl">screen -dmS forge-1.16.5 java -Xms2G -Xmx2G -XX:+AggressiveOpts -XX:+UseCompressedOops -jar forge-1.16.5-36.2.41.jar nogui
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;minecraft 1.16-forage server started successfully&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>cd /home/HeTong/.minecraft/1.16.5-forge/
+</span></span><span style="display:flex;"><span>screen -dmS forge-1.16.5 java -Xms2G -Xmx2G -XX:+AggressiveOpts -XX:+UseCompressedOops -jar forge-1.16.5-36.2.41.jar nogui
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;minecraft 1.16-forage server started successfully&#34;</span>
 </span></span></code></pre></div><p>和一个停止运行的脚本 <code>stop.sh</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl">screen -dr &lt;你的 forge MC 的 screen 名字&gt; -X stuff <span class="s2">&#34;say 服务器将在10S后关闭！\n&#34;</span>
-</span></span><span class="line"><span class="cl">sleep <span class="m">10</span>
-</span></span><span class="line"><span class="cl">screen -dr &lt;你的 forge MC 的 screen 名字&gt; -X stuff <span class="s2">&#34;stop\n&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>screen -dr &lt;你的 forge MC 的 screen 名字&gt; -X stuff <span style="color:#e6db74">&#34;say 服务器将在10S后关闭！\n&#34;</span>
+</span></span><span style="display:flex;"><span>sleep <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>screen -dr &lt;你的 forge MC 的 screen 名字&gt; -X stuff <span style="color:#e6db74">&#34;stop\n&#34;</span>
 </span></span></code></pre></div><p>取的 screen 名字尽量不要重复</p>
 
 
@@ -1214,7 +1214,7 @@ Caused by: java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=http://localhost:1313/posts/mcserver-build/&amp;subject=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
+      href="mailto:?body=https://hetong-re4per.com/posts/mcserver-build/&amp;subject=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1233,7 +1233,7 @@ Caused by: java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/mcserver-build/&amp;text=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
+      href="https://twitter.com/intent/tweet/?url=https://hetong-re4per.com/posts/mcserver-build/&amp;text=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1251,7 +1251,7 @@ Caused by: java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/mcserver-build/&amp;quote=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://hetong-re4per.com/posts/mcserver-build/&amp;quote=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
       title="分享到 Facebook"
       aria-label="分享到 Facebook"
       >
@@ -1270,7 +1270,7 @@ Caused by: java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/mcserver-build/&amp;resubmit=true&amp;title=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
+      href="https://api.whatsapp.com/send?text=https://hetong-re4per.com/posts/mcserver-build/&amp;resubmit=true&amp;title=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
       title=""
       aria-label=""
       >
@@ -1289,7 +1289,7 @@ Caused by: java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=http://localhost:1313/posts/mcserver-build/&amp;resubmit=true&amp;title=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
+      href="https://t.me/share/url?url=https://hetong-re4per.com/posts/mcserver-build/&amp;resubmit=true&amp;title=Java%20MC%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%ba"
       title=""
       aria-label=""
       >
@@ -1699,7 +1699,7 @@ Caused by: java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="https://hetong-re4per.com/"
   style="z-index:500"
 >
   <div
