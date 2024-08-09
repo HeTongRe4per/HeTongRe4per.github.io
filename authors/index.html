@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="false"><head>
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="zh-cn" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="https://hetong-re4per.com/authors/" />
+  <link rel="canonical" href="http://localhost:1313/authors/" />
   
   <link rel="alternate" type="application/rss+xml" href="/authors/index.xml" title="瞳のBlog" />
   
@@ -65,7 +65,7 @@
   
   
   
-  <meta property="og:url" content="https://hetong-re4per.com/authors/">
+  <meta property="og:url" content="http://localhost:1313/authors/">
   <meta property="og:site_name" content="瞳のBlog">
   <meta property="og:title" content="Authors">
   <meta property="og:description" content="HeTongRe4per&#39;s website">
@@ -133,6 +133,29 @@
   
   
   <meta name="theme-color"/>
+  
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9rBNCV9K6L64mPfNtaNDHFWhSdjn81Fw",
+      authDomain: "AIzaSyA9rBNCV9K6L64mPfNtaNDHFWhSdjn81Fw",
+      projectId: "blog-blowfish-5e4cd",
+      storageBucket: "blog-blowfish-5e4cd.appspot.com",
+      messagingSenderId: "793287132127",
+      appId: "1:793287132127:web:ef4dbb45ad4a3c57f13a6a",
+      measurementId: "G-B7KWPX4KKZ"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
   
   
 </head>
@@ -268,7 +291,7 @@
           target="_blank"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
           
           <p class="text-sm font-sm" title="">
-            teamspeak
+            Teamspeak
           </p>
         </a>
         
@@ -574,7 +597,7 @@
     <a href="https://invite.teamspeak.com/ts3.hetong-re4per.com/"  target="_blank"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-sm font-small" title="">
-            teamspeak
+            Teamspeak
         </p>
     </a>
 </li>
@@ -703,7 +726,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/img/background.svg);">
+    style="background-image:url(/img/82999107_p0_hu3686240114107804175.png);">
     
 
 
@@ -826,7 +849,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="https://hetong-re4per.com/"
+  data-url="http://localhost:1313/"
   style="z-index:500"
 >
   <div
