@@ -2,118 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 瞳のBlog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://hetong-re4per.com/tags/</link>
     <description>Recent content in Tags on 瞳のBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 褐瞳さん</copyright>
-    <lastBuildDate>Tue, 06 Aug 2024 09:32:41 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Aug 2024 09:32:41 +0000</lastBuildDate><atom:link href="https://hetong-re4per.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NEUTRINO</title>
-      <link>http://localhost:1313/tags/neutrino/</link>
+      <link>https://hetong-re4per.com/tags/neutrino/</link>
       <pubDate>Tue, 06 Aug 2024 09:32:41 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/neutrino/</guid>
+      <guid>https://hetong-re4per.com/tags/neutrino/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>技术教程</title>
-      <link>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/</link>
+      <link>https://hetong-re4per.com/tags/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/</link>
       <pubDate>Tue, 06 Aug 2024 09:32:41 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://hetong-re4per.com/tags/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Minecraft</title>
-      <link>http://localhost:1313/tags/minecraft/</link>
+      <link>https://hetong-re4per.com/tags/minecraft/</link>
       <pubDate>Wed, 10 Jul 2024 09:11:29 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/minecraft/</guid>
+      <guid>https://hetong-re4per.com/tags/minecraft/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Teamspeak3</title>
-      <link>http://localhost:1313/tags/teamspeak3/</link>
+      <link>https://hetong-re4per.com/tags/teamspeak3/</link>
       <pubDate>Thu, 06 Jun 2024 10:15:48 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/teamspeak3/</guid>
+      <guid>https://hetong-re4per.com/tags/teamspeak3/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>OpenWRT</title>
-      <link>http://localhost:1313/tags/openwrt/</link>
+      <link>https://hetong-re4per.com/tags/openwrt/</link>
       <pubDate>Fri, 31 May 2024 11:28:13 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/openwrt/</guid>
+      <guid>https://hetong-re4per.com/tags/openwrt/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>多设备检测</title>
-      <link>http://localhost:1313/tags/%E5%A4%9A%E8%AE%BE%E5%A4%87%E6%A3%80%E6%B5%8B/</link>
+      <link>https://hetong-re4per.com/tags/%E5%A4%9A%E8%AE%BE%E5%A4%87%E6%A3%80%E6%B5%8B/</link>
       <pubDate>Fri, 31 May 2024 11:28:13 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/%E5%A4%9A%E8%AE%BE%E5%A4%87%E6%A3%80%E6%B5%8B/</guid>
+      <guid>https://hetong-re4per.com/tags/%E5%A4%9A%E8%AE%BE%E5%A4%87%E6%A3%80%E6%B5%8B/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>校园网</title>
-      <link>http://localhost:1313/tags/%E6%A0%A1%E5%9B%AD%E7%BD%91/</link>
+      <link>https://hetong-re4per.com/tags/%E6%A0%A1%E5%9B%AD%E7%BD%91/</link>
       <pubDate>Fri, 31 May 2024 11:28:13 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/%E6%A0%A1%E5%9B%AD%E7%BD%91/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Css</title>
-      <link>http://localhost:1313/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/css/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>http://localhost:1313/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/html/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>http://localhost:1313/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/markdown/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>示例</title>
-      <link>http://localhost:1313/tags/%E7%A4%BA%E4%BE%8B/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/%E7%A4%BA%E4%BE%8B/</guid>
+      <guid>https://hetong-re4per.com/tags/%E6%A0%A1%E5%9B%AD%E7%BD%91/</guid>
       <description></description>
       
     </item>
