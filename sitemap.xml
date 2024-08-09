@@ -4,18 +4,24 @@
 
   <url>
     <loc>https://hetong-re4per.com/posts/</loc>
-    <lastmod>2024-08-06T09:32:41+00:00</lastmod>
+    <lastmod>2024-08-09T16:04:08+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://hetong-re4per.com/posts/neutrino/</loc>
-    <lastmod>2024-08-06T09:32:41+00:00</lastmod>
+    <loc>https://hetong-re4per.com/posts/how-bulid-blog-on-github-page/</loc>
+    <lastmod>2024-08-09T16:04:08+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://hetong-re4per.com/</loc>
+    <lastmod>2024-08-09T16:04:08+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://hetong-re4per.com/posts/neutrino/</loc>
     <lastmod>2024-08-06T09:32:41+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -1315,10 +1315,10 @@
 <p>因为去年校园网升级到了千兆网，当时心动办了校园网。虽然校园网的有线网速度很快，但是限制设备数量为两台。而我的设备比较多，两台肯定不够用，并且校园网就只有有线网的速度可以。于是我了解了一下，决定使用红米AC2100路由器然后安装OpenWRT来实现校园网认证并共享网络给我的舍友。买路由器之前看了一些讨论，说他们学校有什么多设备检测之类的，但我当时安装路由器后并没有出现被检测到的现象，当时还在暗暗窃喜。</p>
 <p>于是就在前几天喜提多设备检测。当天刚刚起床，舍友就给我说网没法用了，看了一下，说什么检测到分享网络，冻结30分钟。我人懵了，用了这么久咋突然被检测到了，后来去贴吧里一看才发现是突然加的，我的专业需要使用一些虚拟机，而且一些安卓模拟器也会被误报，真的十分影响体验。之后和吧里一位兄弟讨论得出大概是用的ttl检测（<del>后来似乎加了其他的检测方式，不排除有很逆天的深度包检测</del>）。于是去搜了一下多设备检测的绕过方法，在这里记录一下。</p>
 <p>
-  <figure>
-    <img class="my-0 rounded-md" loading="lazy" src="https://file.hetong-re4per.com/.picture/blog/24-05-17/p3.png" alt="被检测力" />
-    
-  </figure>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./img/p3.png" alt="被检测力" />
+      
+    </figure>
 </p>
 
   
@@ -1383,10 +1383,10 @@
 <p>TTL 是最简单的多设备检测方式，因为 TTL 每过一个路由值都会 -1，所以只需要抓包然后读出我们的包头里面的 TTL 值是否是一般情况下系统默认的 128 或者 64 就可以判断我们是否共享了网络。但在OpenWRT中我们可以简单的通过添加 iptables 或者 nftables 防火墙规则来实现路由器下所有设备 TTL 值的统一。</p>
 <p>我们需要先确定自己路由器防火墙的类型。一般在 OpenWRT 22.01 版本以后（包括）自带防火墙是 nftables ，以前的为 iptables。可以在网页的路由器管理后台 系统-&gt;概览 看到固件版本。</p>
 <p>
-  <figure>
-    <img class="my-0 rounded-md" loading="lazy" src="https://file.hetong-re4per.com/.picture/blog/24-05-17/p5.png" alt="固件版本" />
-    
-  </figure>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./img/p5.png" alt="固件版本" />
+      
+    </figure>
 </p>
 <p>确认了防火墙类型后，我们就可以开始设置防火墙了。</p>
 
@@ -1435,13 +1435,13 @@
 </div>
 
 <p>在自己电脑上利用终端（Windows Terminal）或者 cmd 键入以下命令。也可以使用更专业的ssh工具。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl">ssh root@<span class="p">&lt;</span>路由器网关地址&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh root@&lt;路由器网关地址&gt;
 </span></span></code></pre></div><p>回车后输入路由器管理员账户的密码（这里在输入时不会显示任何值，这是正常的，输入完成后回车即可）。然后就进入了路由器的ssh界面。</p>
 <p>
-  <figure>
-    <img class="my-0 rounded-md" loading="lazy" src="https://file.hetong-re4per.com/.picture/blog/24-05-17/p4.png" alt="路由器ssh" />
-    
-  </figure>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./img/p4.png" alt="路由器ssh" />
+      
+    </figure>
 </p>
 <p>创建用来修改所有流量包头TTL值的规则 <code>12-mangle-ttl-128</code>（128可以改成64，分别对应 windows 和 Linux/Android 默认的 TTL）</p>
 <ol>
@@ -1463,10 +1463,10 @@
 <li>完成后先按键盘上的 <code>Esc</code>退出编辑模式，再输入 <code>:wq</code>回车就可以退出并保存文件了。</li>
 </ol>
 <p>
-  <figure>
-    <img class="my-0 rounded-md" loading="lazy" src="https://file.hetong-re4per.com/.picture/blog/24-05-17/p7.png" alt="12-mangle-ttl-128.nft" />
-    
-  </figure>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./img/p7.png" alt="12-mangle-ttl-128.nft" />
+      
+    </figure>
 </p>
 <p>完成后在命令行使用 <code>service firewall restart</code>来重启防火墙即可。效果如图（<del>图是之前截的，所以设置的值并不是128</del>）。</p>
 <p>
@@ -1488,7 +1488,7 @@
     
 </h3>
 <p>进入 OpenWRT 网页后台管理页的防火墙设置，在 自定义设置 中填入以下内容，然后点击右下角保存并退出即可。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">iptables -t mangle -A POSTROUTING -j TTL --ttl-set 128
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">iptables -t mangle -A POSTROUTING -j TTL --ttl-set <span class="m">128</span>
 </span></span></code></pre></div>
 
 <h2 class="relative group">UA 隐藏 
@@ -1586,13 +1586,13 @@
   </script>
 </a>
 <p>先去 Releases 找到对应你路由器架构的 <code>.ipk</code>包，下载后通过 OpenWRT 中的 系统-&gt;软件包 中的 上传软件包，然后点击安装。路由器的架构依旧可以在网页的路由器管理后台 系统-&gt;概览 看到 cpu 架构。当然你还是不知道你的路由器是什么架构的话可以去 系统-&gt;软件包 ，找到 配置opkg&hellip; 按钮，点击后在 <code>/etc/opkg/distfeeds.conf</code>项中的镜像源地址会有 <code>packages/</code>的字样，后跟的就是的路由器 cpu 架构，比如我的就是 <code>mipsel_24kc</code>。</p>
-<pre tabindex="0"><code>src/gz openwrt_core https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/targets/ramips/mt7621/packages
-src/gz openwrt_base https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/base
-src/gz openwrt_luci https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/luci
-src/gz openwrt_packages https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/packages
-src/gz openwrt_routing https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/routing
-src/gz openwrt_telephony https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/telephony
-</code></pre><p>下载并安装后需要进行一些设置，请参考 <a href="https://github.com/Zxilly/UA2F" target="_blank">UA2F</a> 的 <strong>uci command</strong> 部分进行设置。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">src/gz openwrt_core https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/targets/ramips/mt7621/packages
+</span></span><span class="line"><span class="cl">src/gz openwrt_base https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/base
+</span></span><span class="line"><span class="cl">src/gz openwrt_luci https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/luci
+</span></span><span class="line"><span class="cl">src/gz openwrt_packages https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/packages
+</span></span><span class="line"><span class="cl">src/gz openwrt_routing https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/routing
+</span></span><span class="line"><span class="cl">src/gz openwrt_telephony https://mirrors.ustc.edu.cn/openwrt/releases/23.05.3/packages/mipsel_24kc/telephony
+</span></span></code></pre></div><p>下载并安装后需要进行一些设置，请参考 <a href="https://github.com/Zxilly/UA2F" target="_blank">UA2F</a> 的 <strong>uci command</strong> 部分进行设置。</p>
 <p>然后就是需要关掉<strong>软件分流</strong>和<strong>全锥型NAT</strong>，有 <code>TurboACC</code>的话也请尽量不要使用，不然 <code>rkp-ipid</code>和 <code>ua2f</code>可能会失效。</p>
 <p>
   <figure>

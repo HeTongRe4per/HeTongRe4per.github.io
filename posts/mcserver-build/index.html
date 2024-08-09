@@ -1430,10 +1430,10 @@ Caused by: java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$
 <p>首先在自己的两个 <a href="https://www.bilibili.com/read/cv7149916/" target="_blank">server.properties</a> 中修改 server-port 即端口的值，其中纯净版服务器端口为默认的25565，Forge 服的端口改为25566。</p>
 <p>然后到我的DNS服务商即腾讯 DNS 服务中新添加两条解析，解析类型都为 SRV,主机记录为 <code>_minecraft.tcp.&lt;第三级的名字&gt;</code>其中 <code>&lt;第三级的名字&gt;</code>自己想要实现的三级域名的最前端，比如我想要在 mc.hetong-re4per.com 上运行我的纯净服（端口25565），在 earth.hetong-re4per.com 上运行我的 forge 服（端口26657），就在主记录上填上 <code>_minecraft.tcp.mc</code>，记录值填上 <code>5 0 25565 _mcserver.hetong-re4per.com.</code>，forge 的另起一项分别填上 <code>_minecraft.tcp.earth</code>和 <code>5 0 25567 _mcserver.hetong-re4per.com.</code>。<strong>注意，不要直接填服务器 ip，需要填一个提供服务的域名</strong>，然后就同下图：</p>
 <p>
-  <figure>
-    <img class="my-0 rounded-md" loading="lazy" src="https://file.hetong-re4per.com/.picture/blog/24-05-17/p8.png" alt="SRV 解析" />
-    
-  </figure>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="./img/p8.png" alt="SRV 解析" />
+      
+    </figure>
 </p>
 <p>好了，以上，希望能够帮到萌新，有问题也可以提问，我如果知道的话会尽量帮忙解决。</p>
 
