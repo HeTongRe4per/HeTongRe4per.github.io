@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>瞳のBlog</title>
-    <link>https://hetong-re4per.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on 瞳のBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 褐瞳さん</copyright>
-    <lastBuildDate>Sat, 10 Aug 2024 13:56:46 +0800</lastBuildDate><atom:link href="https://hetong-re4per.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Aug 2024 13:56:46 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何为自己的博客添加阅读量和点赞量</title>
-      <link>https://hetong-re4per.com/posts/show-like-and-view-on-blog/</link>
+      <link>http://localhost:1313/posts/show-like-and-view-on-blog/</link>
       <pubDate>Sat, 10 Aug 2024 13:56:46 +0800</pubDate>
       
-      <guid>https://hetong-re4per.com/posts/show-like-and-view-on-blog/</guid>
+      <guid>http://localhost:1313/posts/show-like-and-view-on-blog/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hetong-re4per.com/posts/show-like-and-view-on-blog/feature-104911295_p0.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/show-like-and-view-on-blog/feature-104911295_p0.jpg" />
     </item>
     
     <item>
       <title>如何使用Github Page搭建自己的博客</title>
-      <link>https://hetong-re4per.com/posts/how-bulid-blog-on-github-page/</link>
+      <link>http://localhost:1313/posts/how-bulid-blog-on-github-page/</link>
       <pubDate>Fri, 09 Aug 2024 16:04:08 +0800</pubDate>
       
-      <guid>https://hetong-re4per.com/posts/how-bulid-blog-on-github-page/</guid>
+      <guid>http://localhost:1313/posts/how-bulid-blog-on-github-page/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hetong-re4per.com/posts/how-bulid-blog-on-github-page/feature-99766199_p0.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/how-bulid-blog-on-github-page/feature-99766199_p0.jpg" />
     </item>
     
     <item>
       <title>如何使用 NEUTRINO 让歌姬为你而唱</title>
-      <link>https://hetong-re4per.com/posts/neutrino/</link>
+      <link>http://localhost:1313/posts/neutrino/</link>
       <pubDate>Tue, 06 Aug 2024 09:32:41 +0000</pubDate>
       
-      <guid>https://hetong-re4per.com/posts/neutrino/</guid>
+      <guid>http://localhost:1313/posts/neutrino/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hetong-re4per.com/posts/neutrino/feature-94704091_p0.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/neutrino/feature-94704091_p0.png" />
     </item>
     
     <item>
       <title>Java MC服务器搭建</title>
-      <link>https://hetong-re4per.com/posts/mcserver-build/</link>
+      <link>http://localhost:1313/posts/mcserver-build/</link>
       <pubDate>Wed, 10 Jul 2024 09:11:29 +0000</pubDate>
       
-      <guid>https://hetong-re4per.com/posts/mcserver-build/</guid>
+      <guid>http://localhost:1313/posts/mcserver-build/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hetong-re4per.com/posts/mcserver-build/feature-95449182_p0.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mcserver-build/feature-95449182_p0.jpg" />
     </item>
     
     <item>
       <title>如何搭建自己的ts3服务器</title>
-      <link>https://hetong-re4per.com/posts/ts3server-build/</link>
+      <link>http://localhost:1313/posts/ts3server-build/</link>
       <pubDate>Thu, 06 Jun 2024 10:15:48 +0000</pubDate>
       
-      <guid>https://hetong-re4per.com/posts/ts3server-build/</guid>
+      <guid>http://localhost:1313/posts/ts3server-build/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hetong-re4per.com/posts/ts3server-build/feature-114142035_p0.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/ts3server-build/feature-114142035_p0.png" />
     </item>
     
     <item>
       <title>校园网防止多设备检测指北</title>
-      <link>https://hetong-re4per.com/posts/multi-device-detection/</link>
+      <link>http://localhost:1313/posts/multi-device-detection/</link>
       <pubDate>Fri, 31 May 2024 11:28:13 +0000</pubDate>
       
-      <guid>https://hetong-re4per.com/posts/multi-device-detection/</guid>
+      <guid>http://localhost:1313/posts/multi-device-detection/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hetong-re4per.com/posts/multi-device-detection/feature-108199050_p0.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/multi-device-detection/feature-108199050_p0.jpg" />
     </item>
     
     <item>
       <title>关于我</title>
-      <link>https://hetong-re4per.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hetong-re4per.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hetong-re4per.com/about/feature-101502157_p0.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/about/feature-101502157_p0.jpg" />
     </item>
     
   </channel>

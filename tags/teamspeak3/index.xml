@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teamspeak3 on 瞳のBlog</title>
-    <link>https://hetong-re4per.com/tags/teamspeak3/</link>
+    <link>http://localhost:1313/tags/teamspeak3/</link>
     <description>Recent content in Teamspeak3 on 瞳のBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 褐瞳さん</copyright>
-    <lastBuildDate>Thu, 06 Jun 2024 10:15:48 +0000</lastBuildDate><atom:link href="https://hetong-re4per.com/tags/teamspeak3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jun 2024 10:15:48 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/teamspeak3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何搭建自己的ts3服务器</title>
-      <link>https://hetong-re4per.com/posts/ts3server-build/</link>
+      <link>http://localhost:1313/posts/ts3server-build/</link>
       <pubDate>Thu, 06 Jun 2024 10:15:48 +0000</pubDate>
       
-      <guid>https://hetong-re4per.com/posts/ts3server-build/</guid>
+      <guid>http://localhost:1313/posts/ts3server-build/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hetong-re4per.com/posts/ts3server-build/feature-114142035_p0.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/ts3server-build/feature-114142035_p0.png" />
     </item>
     
   </channel>
