@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 瞳のBlog</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 瞳のBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 褐瞳さん</copyright>
+    <lastBuildDate>Sat, 10 Aug 2024 13:56:46 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何为自己的博客添加阅读量和点赞量</title>
+      <link>http://localhost:1313/posts/show-like-and-view-on-blog/</link>
+      <pubDate>Sat, 10 Aug 2024 13:56:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/show-like-and-view-on-blog/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/show-like-and-view-on-blog/feature-104911295_p0.jpg" />
+    </item>
+    
+    <item>
+      <title>如何使用Github Page搭建自己的博客</title>
+      <link>http://localhost:1313/posts/how-bulid-blog-on-github-page/</link>
+      <pubDate>Fri, 09 Aug 2024 16:04:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/how-bulid-blog-on-github-page/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/how-bulid-blog-on-github-page/feature-99766199_p0.jpg" />
+    </item>
+    
+    <item>
+      <title>如何使用 NEUTRINO 让歌姬为你而唱</title>
+      <link>http://localhost:1313/posts/neutrino/</link>
+      <pubDate>Tue, 06 Aug 2024 09:32:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/neutrino/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/neutrino/feature-94704091_p0.png" />
+    </item>
+    
+    <item>
+      <title>Java MC服务器搭建</title>
+      <link>http://localhost:1313/posts/mcserver-build/</link>
+      <pubDate>Wed, 10 Jul 2024 09:11:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/mcserver-build/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mcserver-build/feature-95449182_p0.jpg" />
+    </item>
+    
+    <item>
+      <title>如何搭建自己的ts3服务器</title>
+      <link>http://localhost:1313/posts/ts3server-build/</link>
+      <pubDate>Thu, 06 Jun 2024 10:15:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/ts3server-build/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/ts3server-build/feature-114142035_p0.png" />
+    </item>
+    
+    <item>
+      <title>校园网防止多设备检测指北</title>
+      <link>http://localhost:1313/posts/multi-device-detection/</link>
+      <pubDate>Fri, 31 May 2024 11:28:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/multi-device-detection/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/multi-device-detection/feature-108199050_p0.jpg" />
+    </item>
+    
+  </channel>
+</rss>

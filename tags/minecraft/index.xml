@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minecraft on 瞳のBlog</title>
+    <link>http://localhost:1313/tags/minecraft/</link>
+    <description>Recent content in Minecraft on 瞳のBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 褐瞳さん</copyright>
+    <lastBuildDate>Wed, 10 Jul 2024 09:11:29 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java MC服务器搭建</title>
+      <link>http://localhost:1313/posts/mcserver-build/</link>
+      <pubDate>Wed, 10 Jul 2024 09:11:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/mcserver-build/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/mcserver-build/feature-95449182_p0.jpg" />
+    </item>
+    
+  </channel>
+</rss>
