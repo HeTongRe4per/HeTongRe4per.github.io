@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hetong-re4per.com/sitemap.xml
